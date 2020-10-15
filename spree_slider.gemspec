@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.author            = 'Giuseppe Privitera'
   s.email             = 'priviterag@gmail.com'
-  s.homepage          = 'https://github.com/priviterag/spree_slider'
+  s.homepage          = 'https://github.com/spree-contrib/spree_slider'
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
@@ -21,13 +21,24 @@ Gem::Specification.new do |s|
   s.add_dependency 'spree_backend', spree_version
 
   s.add_development_dependency 'appraisal'
-  s.add_development_dependency 'factory_girl'
-  s.add_development_dependency 'factory_girl_rails'
+  
+  s.add_dependency 'active_storage_validations', '~> 0.8.4'
+  s.add_development_dependency 'awesome_print'
+  s.add_development_dependency 'byebug'
+  s.add_development_dependency 'capybara'
+  s.add_development_dependency 'capybara-screenshot'
+  s.add_development_dependency 'coffee-rails'
+  s.add_development_dependency 'database_cleaner'
+  s.add_development_dependency 'factory_bot', '~> 4.7'
   s.add_development_dependency 'ffaker'
-  s.add_development_dependency 'guard-rspec'
   s.add_development_dependency 'mysql2'
   s.add_development_dependency 'pg'
-  s.add_development_dependency 'rspec-rails'
-  s.add_development_dependency 'shoulda-matchers'
+
+  s.add_development_dependency 'pry'
+  s.add_development_dependency 'rspec-mocks'
+  s.add_development_dependency 'rspec-rails', '~> 4.0.0.beta2'
+  s.add_development_dependency 'sass-rails'
+  s.add_development_dependency 'simplecov'
   s.add_development_dependency 'sqlite3'
+  s.add_development_dependency 'webdrivers', '~> 4.0.0'
 end
